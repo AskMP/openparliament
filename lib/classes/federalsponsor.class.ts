@@ -6,25 +6,25 @@ import {
 export default class FederalSponsor {
 
     public id?: number;
-    public senateAffiliation: number;
-    public name: {
-        official: {
-            given?: string,
-            family?: string,
-            middle?: string
+    public senateAffiliation?: number;
+    public name?: {
+        official : {
+            given: string,
+            family: string,
+            middle: string
         },
-        usual: {
-            given?: string
+        usual : {
+            given: string
         },
-        honorific?: BilingualString
+        honorific: BilingualString
     };
-    public affiliation : {
-        title?: BilingualString,
-        role?: BilingualDocument,
+    public affiliation?: {
+        title: BilingualString,
+        role: BilingualDocument,
     };
-    public constituency: BilingualDocument;
+    public constituency?: BilingualDocument;
 
-    constructor(data) {
+    constructor(data:any) {
         if (!(data instanceof Object)) return;
         this.id = data.SponsorPersonId;
         this.senateAffiliation = data.SponsorSenateSystemAffiliationId;

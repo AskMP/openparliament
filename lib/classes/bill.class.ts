@@ -15,11 +15,11 @@ export class FederalBill {
     public parliament?: number;
     public session?: number;
     public title?: BilingualString;
-    public shortTitle : BilingualString;
+    public shortTitle?: BilingualString;
     public status?: BilingualDocument;
     public sponsor?: FederalSponsor;
     public senatePreStudy: boolean = false;
-    public originator: TOriginator;
+    public originator?: TOriginator;
     public governmentBill: boolean = false;
     public houseBill: boolean = false;
     public senateBill: boolean = false;

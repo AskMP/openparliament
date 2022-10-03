@@ -12,3 +12,4 @@ settings_local.py
 pip-log.txt
 logs/
 cacheable/
+node_modules/

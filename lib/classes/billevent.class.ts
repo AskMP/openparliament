@@ -17,7 +17,7 @@ export default class FederalBillEvent {
     public meeting?: number;
     public additionalInfo?: BilingualString;
 
-    constructor(data) {
+    constructor(data:any) {
         if (!(data instanceof Object)) return;
         this.id = data.LatestBillEventEventTypeId;
         this.name = new BilingualString(data.LatestBillEventTypeNameEn, data.LatestBillEventTypeNameFr);
